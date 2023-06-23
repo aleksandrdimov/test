@@ -3,13 +3,13 @@ import Nav from "./Nav/Nav";
 import Logo from "./Logo/Logo";
 import "./Header.scss";
 
-const Header = () => {
+const Header = ({ setForm, form, setBlur, blur }) => {
   return (
     <header className="header">
       <div className="wrapper header__container">
         <Logo />
         <Nav />
-        <Contacts />
+        <Contacts setForm={setForm} form={form} setBlur={setBlur} blur={blur} />
       </div>
     </header>
   );

@@ -8,8 +8,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 2px #859BA6;
 
-    &__text {}
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    &__link {
+        color: #859BA6;
+        text-decoration: underline;
+    }
 
     &__button {
         cursor: pointer;
@@ -20,5 +31,41 @@
         padding: 13px 25px;
         border-radius: 5px;
         border: 2px solid #859BA6;
+    }
+}
+
+@media(max-width:767px) {
+    .cookies {
+        bottom: 20px;
+        width: 350px;
+        background-color: white;
+        padding: 15px 20px;
+
+        &__text {
+            font-size: 12px;
+            margin-right: 20px;
+        }
+
+        &__button {
+            font-size: 12px;
+            color: #859BA6;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+    }
+}
+
+@media(max-width:599px) {
+    .cookies {
+        bottom: 15px;
+        right: 15px;
+        width: 290px;
+
+        &__button {
+            font-size: 12px;
+            color: #859BA6;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
     }
 }

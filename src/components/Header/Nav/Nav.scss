@@ -54,7 +54,7 @@
         height: 100vh;
         background-color: white;
         transition: all .4s ease-in-out;
-        transform: translateX(100%);
+        transform: translateX(-100%);
         margin: 0;
 
         &.js-active {
